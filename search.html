@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="ua-windows ua-ie7">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+
+    <title>
+  搜索: С����
+</title>
+    
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+    
+<link rel="search" type="application/opensearchdescription+xml" title="豆瓣搜索" href="/opensearch">
+
+    <script >var _head_start = new Date();</script>
+    <script src="http://img3.douban.com/f/shire/72ced6df41d4d158420cebdd254f9562942464e3/js/jquery.min.js"></script>
+    <script src="http://img3.douban.com/f/shire/e4d301029a110cc88722e153847a9588953e418f/js/douban.js"></script>
+    <link href="http://img3.douban.com/f/shire/5328679eb1a2f1b74fab599028a86e9ef2d0375a/css/douban.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    
+        
+  h1{display:none}.mod-search{position:relative;overflow:hidden;zoom:1;margin-bottom:28px;background-color:#f7f7f8;padding:7px}.mod-search input{-webkit-appearance:none;border:0;background:transparent}.mod-search label{position:absolute;left:12px;top:10px;line-height:30px;cursor:text;color:#bbb}.mod-search legend{display:none}.mod-search fieldset{border:0;padding:0;margin:0}.mod-search .inp{height:30px;cursor:text;border:1px solid #dcdcdc;background-color:#fff}.mod-search .inp input{background:#fff;width:94%;margin:0;text-align:left;height:30px;padding-left:6px;height:28px\9;line-height:28px\9;outline:0}.mod-search .inp-btn{position:absolute;top:6px;right:6px;width:30px;height:30px;zoom:1;overflow:hidden}.mod-search .inp-btn input{width:100%;height:100%;font-size:0;padding:35px 0 0 0;overflow:hidden;background:url(http://img3.douban.com/f/sns/f71f15922ebd7c0ff0ea0e7a25577529efd8981a/pics/icon/bn_srh_1.png) no-repeat 45% 45%;color:transparent;cursor:pointer}.search-cate{float:left;margin-right:35px;width:65px;font-size:0}.search-cate li{width:65px;display:inline-block;*display:inline;zoom:1;margin-bottom:12px;line-height:1.2;font-size:12px}.search-cate li a{display:block;padding:3px 0;text-align:center}.search-cate li a:link,.search-cate li a:visited{color:#111}.search-cate li a:hover{color:#fff;background-color:#8cd379;border-radius:3px}.search-cate .on a:link,.search-cate .on a:visited,.search-cate .on a:hover,.search-cate .on a:active{background:#7fc06e;color:#fff;border-radius:3px}.search-cate .new a{background:url(http://img3.douban.com/f/sns/e49eca1517424a941871a2667a8957fd6c72d632/pics/new_menu.gif) no-repeat right 0}.search-result{overflow:hidden;zoom:1}.search-result .no-result{font-size:12px}.no-result{margin-bottom:40px;font-size:14px;color:#999}.frm-find{margin-bottom:30px}.frm-find .item{position:relative;margin-bottom:10px;color:#666}.frm-find .item label{position:absolute;top:2px;left:2px;line-height:20px;color:#999;cursor:text}.frm-find .item input{padding:5px;border:1px solid #ccc}.frm-find .item-accounts{border:1px solid #ccc}.frm-find .item-accounts input{width:60%;border:0}.frm-find .item-accounts .mail-domain{position:absolute;top:0;right:2px}.frm-find .item-accounts .mail-domain select{padding:2px;border:0;font-size:13px;background:transparent;-webkit-appearance:none}.frm-find .item-password input{width:98%}.result .ic-movie-mark{background-color:#71b5de}.result .ic-read-mark{background-color:#825d5b}
+  .search_report { float:right; margin-top:15px; margin-right:10px;}
+  .search_report a:link,
+  .search_report a:hover,
+  .search_report a:visited,
+  .search_report a:active { color:#bbb; }
+  .search_report a:hover { color:#fff; background-color:#bbb; }
+  .search-list-item a{color:#666}
+  .search-list-item a:hover{color:#fff}
+  .topic-promotion {font-size: 13px; border-bottom: 1px dashed #CCC; padding-bottom: 15px; margin-bottom: 10px}
+  .topic-promotion a:hover {color: #37A; background-color: #E8E8E8}
+  .topic-promotion a {display: inline-block; padding: 3px 23px; margin-right: 10px; background: #F5F5F5}
+  .topic-promotion a.new-icon {background: #F5F5F5 url('http://img3.douban.com/f/shire/e49eca1517424a941871a2667a8957fd6c72d632/pics/new_menu.gif') no-repeat right 0}
+  .topic-promotion span {font-size: 12px; color: gray}
+  .topic-promotion .related-topics {margin-top: 20px}
+
+    </style>
+    
+    <link rel="stylesheet" href="http://img3.douban.com/misc/mixed_static/79e43fe8ff9760b6.css">
+    <script>
+  var o={},PEOPLE_ID="",currTagId="",totallen=16,newGroupNum=0,groupNameArr=[],isDuplicate=false,mlist=$(".menu-list"),olist=$(".group-opts-list"),sglist=$(".set-group-list"),sgarrow=$(".user-group-arrow"),addGroup=$("#add-new-group"),TEMPL_NEW_TAG='<li><a href="?tag={ID}">{NAME}</a></li>',TEMPL_MENU_LIST='<li><a href="?tag=0">全部</a></li>{CUSTOM_TAGS}<li class="last"><a href="?tag=2">未分组</a></li>',TEMPL_NEW_GROUP_ITEM='<li><input type="checkbox" id="{GID}" value="{GID}" {CHECKED}><label for="{GID}">{GNAME}</label></li>',TEMPL_SET_LIST_ITEMS='{CUSTOM_ITEMS}<li class="last"><span class="create-new">新分组</span></li>',TEMPL_GROUP_OPTS='<ul class="group-opts-list"><li id="del-group">删除分组</li><li id="rename-group">改组名</li></ul>',TEMPL_FRIEND_TIPS='<span class="tips">(可看仅朋友可见内容)</span>',TEMPL_EDIT_ICON='&nbsp;<em class="icon-edit"></em>',TEMPL_TIPS='<span class="tips tlimit">{TIPS}</span>',CSS_LAST_ITEM=".set-group-list .last",CSS_INPUT_CREATE=".input-create",CSS_ARROW_SELECT="arrow-select",CSS_LOADER=".gray-loader",CSS_SET_GROUP_LIST=".set-group-list",CSS_EM_TIPS=".tlimit",TXT_DUP_NAME="已有同名分组",TXT_NULL_NAME="请输入分组名",TXT_BAN_WORDS="分组名称含有被禁止的内容",isIE6=($.browser.msie&&$.browser.version==="6.0")?true:false,collectGroupName=function(){var a=$("#db-timeline-hd a").toArray();$.each(a,function(c,b){groupNameArr[c]=$.trim($(b).text())})},countNum=function(){var a=$("input[type=checkbox]:checked").length;if(a>0){$(".sel-wrapper .user-rs").html("加入"+a+"个分组")}else{$(".sel-wrapper .user-rs").html("加入分组")}},changeGroupShow=function(f){var c=f.parents(".user-group-arrow").prev(".user-rs"),b=f.closest(CSS_SET_GROUP_LIST).children().children(":checked"),a=b.length,e=b.toArray(),d=$.map(e,function(g){return $(g).next().text().escapeHTML()});if(a>0){c.html(d.join(", ").substring(0,totallen)).show();if(d.join(", ").length>=totallen){c.append("...")}}else{c.text("未分组")}},createNewGroup=function(d,b,c,a){$.each(groupNameArr,function(f,e){if(c===e||c==="全部"||c==="未分组"){isDuplicate=true;if(!$(CSS_EM_TIPS,d).length){$(CSS_INPUT_CREATE,d).after(TEMPL_TIPS.replace("{TIPS}",TXT_DUP_NAME))}else{$(CSS_EM_TIPS,d).text(TXT_DUP_NAME)}return false}else{isDuplicate=false}});if(c&&!isDuplicate){$(CSS_EM_TIPS).remove();$.post_withck("/j/contact/newtag",{name:c,people:b},function(k){if(k.result){var h=[],i=[],m="",g="",l="",j=k.data.newtag.id,f=k.data.newtag.name;if(mlist.length){$.each(k.data.all,function(p,n){h[p]=TEMPL_NEW_TAG.replace("{ID}",n.id).replace("{NAME}",n.name.escapeHTML())});mlist.html(TEMPL_MENU_LIST.replace("{CUSTOM_TAGS}",h.join("")));m=$(".menu-list a:contains("+currGroupName+")");m.parent().addClass("on");if(currGroupName!=="全部"&&currGroupName!=="朋友"&&currGroupName!=="未分组"){m.append(TEMPL_EDIT_ICON).after(TEMPL_GROUP_OPTS)}}$.each(k.data.all,function(p,n){i[p]=TEMPL_NEW_GROUP_ITEM.replace(/{GID}/g,n.id).replace("{GNAME}",n.name.escapeHTML()).replace("{CHECKED}",n.status?'checked="checked"':"")});$(CSS_SET_GROUP_LIST,d).html(TEMPL_SET_LIST_ITEMS.replace("{CUSTOM_ITEMS}",i.join("")));$(CSS_SET_GROUP_LIST+" li:first",d).append(TEMPL_FRIEND_TIPS);if($(CSS_SET_GROUP_LIST).length>1){l=$("#"+j).parent().next().children("label").text()||"";g=TEMPL_NEW_GROUP_ITEM.replace(/{GID}/g,j).replace(/{GNAME}/g,f.escapeHTML()).replace("{CHECKED}","");if(l){$(CSS_SET_GROUP_LIST+' li:contains("'+l+'")').before(g)}else{$(CSS_LAST_ITEM).before(g)}$(CSS_SET_GROUP_LIST+" input[id="+j+"]",d).eq(1).parent().remove()}newGroupNum=$(CSS_SET_GROUP_LIST+" input[type=checkbox]",d).length;if(newGroupNum>=a){$(CSS_LAST_ITEM).remove()}var e=$(d).children().children("li:first");if($(".custom-popwin").length){countNum(e)}else{changeGroupShow(e)}collectGroupName()}else{if(k.msg==="ban"){if(!$(CSS_EM_TIPS,d).length){$(CSS_INPUT_CREATE,d).after(TEMPL_TIPS.replace("{TIPS}",TXT_BAN_WORDS))}else{$(CSS_EM_TIPS,d).text(TXT_BAN_WORDS)}}}},"json")}else{if(!c){if(!$(CSS_EM_TIPS,d).length){$(CSS_INPUT_CREATE,d).after(TEMPL_TIPS.replace("{TIPS}",TXT_NULL_NAME))}else{$(CSS_EM_TIPS,d).text(TXT_NULL_NAME)}}}};collectGroupName();if(isIE6){$(CSS_SET_GROUP_LIST+' li:not(".last")').hover(function(){$(this).addClass("hover")},function(){$(this).removeClass("hover")})};
+</script>
+
+    <link rel="shortcut icon" href="http://img3.douban.com/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  
+    <script type="text/javascript">var _body_start = new Date();</script>
+    
+   
+
+
+
+
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+
+
+
+
+
+
+<div class="top-nav-info">
+      
+      <a href="http://www.douban.com/accounts/login?source=main" class="nav-login" rel="nofollow">登录</a>
+      <a href="http://www.douban.com/accounts/register?source=main" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+
+    <div class="top-nav-doubanapp">
+        
+        <a href="http://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+        <div id="top-nav-appintro" class="more-items">
+            <p class="slogan">汇集一亿人的生活趣味</p>
+            <p class="qrcode">
+                扫码直接下载
+            </p>
+            <div class="download">
+                <a href="http://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">Download on the App Store</a>
+                <a href="http://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Download Android</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="global-nav-items">
+      <ul>
+          
+            
+            <li class="on">
+            <a href="http://www.douban.com/" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-main&#34;,&#34;uid&#34;:&#34;0&#34;}">豆瓣</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://book.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-book&#34;,&#34;uid&#34;:&#34;0&#34;}">读书</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://movie.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-movie&#34;,&#34;uid&#34;:&#34;0&#34;}">电影</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://music.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-music&#34;,&#34;uid&#34;:&#34;0&#34;}">音乐</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://www.douban.com/location/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-location&#34;,&#34;uid&#34;:&#34;0&#34;}">同城</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://www.douban.com/group/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-group&#34;,&#34;uid&#34;:&#34;0&#34;}">小组</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://read.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-read&#34;,&#34;uid&#34;:&#34;0&#34;}">阅读</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://douban.fm/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-fm&#34;,&#34;uid&#34;:&#34;0&#34;}">FM</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://dongxi.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-commodity&#34;,&#34;uid&#34;:&#34;0&#34;}">东西</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://market.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-market&#34;,&#34;uid&#34;:&#34;0&#34;}">市集</a>
+            </li>
+          
+            <li>
+              <a href="#more" class="bn-more"><span>更多</span></a>
+              <div class="more-items">
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tr><td><a href="http://moment.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-moment&#34;,&#34;uid&#34;:&#34;0&#34;}">一刻</a></td></tr>
+                    
+                    <tr><td><a href="http://ypy.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-ypy&#34;,&#34;uid&#34;:&#34;0&#34;}">一拍一</a></td></tr>
+                    
+                    <tr><td><a href="http://9.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-9&#34;,&#34;uid&#34;:&#34;0&#34;}">九点</a></td></tr>
+                </table>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+   
+    
+
+
+
+
+
+
+
+<div id="db-nav-sns" class="nav">
+  <div class="nav-wrap">
+    <div class="nav-primary">
+      <div class="nav-search">
+        <form action="http://www.douban.com/search" method="get">
+          <fieldset>
+            <legend>搜索：</legend>
+            <label for="inp-query">搜索你感兴趣的内容和人...</label>
+            <div class="inp">
+              <input type="hidden" name="source" value="suggest">
+              <input id="inp-query" name="q" size="22" title="搜索搜索你感兴趣的内容和人..." maxlength="60" autocomplete="off"  value="С����">
+            </div>
+            <div class="inp-btn"><input type="submit" value="搜索"></div>
+          </fieldset>
+        </form>
+      </div>
+  
+      <div class="nav-logo">
+        <a href="http://www.douban.com">豆瓣社区</a>
+      </div>
+  
+      <div class="nav-items">
+        <ul>
+          <li><a href="http://www.douban.com/">首页</a></li>
+          <li><a href="http://www.douban.com/explore/">浏览发现</a></li>
+          <li>
+              <a href="http://www.douban.com/app/">移动应用</a>
+              <img src="http://img3.douban.com/f/shire/e49eca1517424a941871a2667a8957fd6c72d632/pics/new_menu.gif" alt="new" />
+              
+          </li>
+          <li>
+            <a href="http://www.douban.com/game/explore?dcs=sns-nav&amp;dcm=douban">游戏</a>
+          </li>
+          <li><a href="http://www.douban.com/online/">线上活动</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <div id="wrapper">
+        
+
+        
+<div id="content">
+    
+    <h1>搜索: С����</h1>
+
+    <div class="grid-16-8 clearfix">
+        
+        
+        <div class="article">
+               
+
+  <div class="mod-search">
+    <form action="http://www.douban.com/search" method="get">
+      <fieldset>
+        <legend>搜索：</legend>
+        <div class="inp"><input placeholder="搜索你感兴趣的内容和人" autofocus name="q" size="22" maxlength="60" value="С����"></div>
+        <div class="inp-btn"><input type="submit" value="搜索"></div>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="search-cate">
+    <ul>
+      <li class=on><a href="/search?q=%D0%A1%CD%F5%D7%D3">全部</a></li>
+      <li class=""><a href="/search?cat=1025&amp;q=%D0%A1%CD%F5%D7%D3">图片</a></li>
+        <li><a href="/search?cat=1005&amp;q=%D0%A1%CD%F5%D7%D3">成员</a></li>
+        <li><a href="/search?cat=1019&amp;q=%D0%A1%CD%F5%D7%D3">小组</a></li>
+        <li><a href="/search?cat=2012&amp;q=%D0%A1%CD%F5%D7%D3">小站</a></li>
+        <li><a href="/search?cat=1001&amp;q=%D0%A1%CD%F5%D7%D3">书籍</a></li>
+        <li><a href="/search?cat=1002&amp;q=%D0%A1%CD%F5%D7%D3">电影</a></li>
+        <li><a href="/search?cat=1003&amp;q=%D0%A1%CD%F5%D7%D3">音乐</a></li>
+        <li><a href="/search?cat=3114&amp;q=%D0%A1%CD%F5%D7%D3">游戏</a></li>
+        <li><a href="/search?cat=3065&amp;q=%D0%A1%CD%F5%D7%D3">条目</a></li>
+        <li><a href="/search?cat=1015&amp;q=%D0%A1%CD%F5%D7%D3">日记</a></li>
+        <li><a href="/search?cat=1011&amp;q=%D0%A1%CD%F5%D7%D3">同城活动</a></li>
+        <li><a href="/search?cat=1008&amp;q=%D0%A1%CD%F5%D7%D3">地点</a></li>
+        <li><a href="/search?cat=3064&amp;q=%D0%A1%CD%F5%D7%D3">移动应用</a></li>
+    </ul>
+  </div>
+  <script>
+    Do(function(){
+      if ($.browser.msie && ($.browser.version|0) === 6) {
+          return;
+      }
+      $(window).scroll((function(){var g=$(document);var d=$(".search-cate");var f=d.find("ul");var e=parseInt($("body").css("padding-top"))+5;var c=d.offset().top-e;var b=d.width();var a;return function(h){if(a){window.clearTimeout(a)}a=window.setTimeout(function(){if(g.scrollTop()>=c){d.css({height:1});f.css({position:"fixed",width:b,top:e})}else{d.css({height:"auto"});f.css({position:"static",width:"auto"})}},0)}})());
+    });
+  </script>
+
+  <div class="search-result">
+    <!-- douban ad begin -->
+    <div id="dale_search_promo"></div>
+    <!-- douban ad end -->
+    
+
+      
+    <h2>
+        相关豆瓣内容:
+            
+    </h2>
+
+
+        <div class="result-list">
+              
+  
+
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fmovie.douban.com%2Fsubject%2F20645098%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1002&amp;type=search&amp;pos=0" target="_blank" onclick="moreurl(this,{i:'0', query:'%D0%A1%CD%F5%D7%D3'})" title="The Little Prince" ><img src="http://img3.douban.com/view/movie_poster_cover/ipst/public/p2274029145.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+            <span>[电影]</span>
+            &nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fmovie.douban.com%2Fsubject%2F20645098%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1002&amp;type=search&amp;pos=0" target="_blank" onclick="moreurl(this,{i:'0', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">8.2</span>
+      <span>(37566评价)</span>
+      <span class="subject-cast">原名:The Little Prince / 马克·奥斯本 / 杰夫·布里吉斯 / 2015</span>
+  </div>
+
+      </div>
+        <p>望女成凤的单身妈妈带着小女孩搬进了新家，并为了帮助她赢得“成功的人生”而制定了异常严苛的“人生规划表”。处于“高压”下的小女孩在一场意外中结识了隔壁的老飞行...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1084336%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=1" target="_blank" onclick="moreurl(this,{i:'1', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img3.doubanio.com/spic/s1237549.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1084336%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=1" target="_blank" onclick="moreurl(this,{i:'1', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">9.0</span>
+      <span>(188313评价)</span>
+      <span class="subject-cast">[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003</span>
+  </div>
+
+      </div>
+        <p>小王子是一个超凡脱俗的仙童，他住在一颗只比他大一丁点儿的小行星上。陪伴他的是一朵他非常喜爱的小玫瑰花。但玫瑰花的虚荣心伤害了小王子对她的感情。小王子告别小行...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1003078%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=2" target="_blank" onclick="moreurl(this,{i:'2', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img3.douban.com/spic/s26698262.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1003078%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=2" target="_blank" onclick="moreurl(this,{i:'2', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">9.2</span>
+      <span>(10685评价)</span>
+      <span class="subject-cast">（法）圣埃克苏佩里 / 胡雨苏 / 中国友谊出版公司 / 2000</span>
+  </div>
+
+      </div>
+        <p>小王子驾到！大家好，我是小王子，生活在B612星球，别看我是王子出生，我要做的事也不少，有时给花浇水，有时我还得耐心地把火山口通一通。实在闷得发慌的时候，为了找...</p>
+    </div>
+  </div>
+
+              
+  
+
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fmovie.douban.com%2Fsubject%2F3017865%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1002&amp;type=search&amp;pos=3" target="_blank" onclick="moreurl(this,{i:'3', query:'%D0%A1%CD%F5%D7%D3'})" title="어린왕자" ><img src="http://img4.douban.com/spic/s2981987.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+            <span>[电影]</span>
+            &nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fmovie.douban.com%2Fsubject%2F3017865%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1002&amp;type=search&amp;pos=3" target="_blank" onclick="moreurl(this,{i:'3', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar40 ll"></span>
+      <span class="rating_nums">7.6</span>
+      <span>(2749评价)</span>
+      <span class="subject-cast">原名:어린왕자 / 崔宗献 / 卓在勋 / 2008</span>
+  </div>
+
+      </div>
+        <p>钟铁（卓在勋 饰）是一名音效师，一心扑在工作上的他自然冷落了家人，就连早早就决定好的全家度假计划都要为他的工作让步，失望之下，妻子熙秀带着儿子恩奎离开了钟铁。...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F20443559%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=4" target="_blank" onclick="moreurl(this,{i:'4', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img3.douban.com/spic/s28317563.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F20443559%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=4" target="_blank" onclick="moreurl(this,{i:'4', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+            <span class="ic-mark ic-read-mark">有电子版</span>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar35 ll"></span>
+      <span class="rating_nums">6.7</span>
+      <span>(4764评价)</span>
+      <span class="subject-cast">[法] 安托万•德•圣埃克苏佩里 / 李继宏 / 天津人民出版社 / 2013</span>
+  </div>
+
+      </div>
+        <p>《小王子》是一本足以让人永葆童心的不朽经典，被全球亿万读者誉为非常值得收藏的书。
+遥远星球上的小王子，与美丽而骄傲的玫瑰吵架负气出走，在各星球漫游中，小王子遇...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F2039931%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=5" target="_blank" onclick="moreurl(this,{i:'5', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img4.douban.com/spic/s2355916.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F2039931%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=5" target="_blank" onclick="moreurl(this,{i:'5', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">9.0</span>
+      <span>(5807评价)</span>
+      <span class="subject-cast">[法] 圣埃克絮佩里 / 周克希 / 上海译文出版社 / 2007</span>
+  </div>
+
+      </div>
+        <p>《小王子》是儿童文学作品，也是写给成年人看的童话。用作者圣埃克絮佩里自已的话来说，是写成“还是孩子时”的那个大人看的文学作品。
+整部小说充满诗意的忧郁、淡淡的...</p>
+    </div>
+  </div>
+
+              
+  
+
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fmovie.douban.com%2Fsubject%2F1294885%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1002&amp;type=search&amp;pos=6" target="_blank" onclick="moreurl(this,{i:'6', query:'%D0%A1%CD%F5%D7%D3'})" title="The Little Prince" ><img src="http://img3.douban.com/spic/s1480205.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+            <span>[电影]</span>
+            &nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fmovie.douban.com%2Fsubject%2F1294885%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1002&amp;type=search&amp;pos=6" target="_blank" onclick="moreurl(this,{i:'6', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">8.3</span>
+      <span>(534评价)</span>
+      <span class="subject-cast">原名:The Little Prince / 斯坦利 多南 (Stanley Donen) / 理查德·基利 / 1974</span>
+  </div>
+
+      </div>
+        <p>Based on the story by Antoine deSaint-Exupery, this magical musical fable begins as a pilot (Richard Kiley) makes a forced landing on the barren Sahara Deser...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F3693974%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=7" target="_blank" onclick="moreurl(this,{i:'7', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img4.douban.com/spic/s3750146.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F3693974%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=7" target="_blank" onclick="moreurl(this,{i:'7', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+            <span class="ic-mark ic-read-mark">有电子版</span>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar50 ll"></span>
+      <span class="rating_nums">9.4</span>
+      <span>(4325评价)</span>
+      <span class="subject-cast">[法]圣埃克絮佩里 / 周克希 / 上海译文出版社 / 2009</span>
+  </div>
+
+      </div>
+        <p>《小王子》是法国著名作家圣埃克絮佩里的一部响誉世界的畅销童话。本书是中、法、英三种语言对照的版本，采用彩色插图并配有难词解析，可以同时兼顾喜爱《小王子》的读...</p>
+    </div>
+  </div>
+
+              
+
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fsite.douban.com%2Fthelittleprince%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=2012&amp;type=search&amp;pos=8" target="_blank" onclick="moreurl(this,{i:'8', query:'%D0%A1%CD%F5%D7%D3'})" title="电影《小王子》"><img src="http://img3.douban.com/view/site/small/public/a2f17bc842c89cf.jpg" alt="电影《小王子》"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>
+            
+                
+                  [品牌小站]
+          </span>&nbsp;
+          <a href="http://www.douban.com/link2/?url=http%3A%2F%2Fsite.douban.com%2Fthelittleprince%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=2012&amp;type=search&amp;pos=8" target="_blank" onclick="moreurl(this,{i:'8', query:'%D0%A1%CD%F5%D7%D3'})" >电影《小王子》</a>
+        </h3>
+        <div class="info">
+          4639 人关注
+        </div>
+      </div>
+        <p>《小王子》官方小站，10月16日暖心上映</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F2158463%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=9" target="_blank" onclick="moreurl(this,{i:'9', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img4.douban.com/spic/s2950016.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F2158463%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=9" target="_blank" onclick="moreurl(this,{i:'9', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar50 ll"></span>
+      <span class="rating_nums">9.2</span>
+      <span>(7720评价)</span>
+      <span class="subject-cast">[法] 安东尼·德·圣艾修伯里 / 艾柯 / 天津教育出版社 / 2007</span>
+  </div>
+
+      </div>
+        <p>一个来自太阳系中某颗小行星的小王子，因为和他那美丽，骄傲的玫瑰闹了别扭，便只身出走。为了寻求爱和友谊，他访问过六颗行星，见识了这些星球上的国王、自负的人、酒...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F26647054%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=10" target="_blank" onclick="moreurl(this,{i:'10', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子（纯美珍藏绘本）" ><img src="http://img3.douban.com/spic/s28322662.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F26647054%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=10" target="_blank" onclick="moreurl(this,{i:'10', query:'%D0%A1%CD%F5%D7%D3'})" >小王子（纯美珍藏绘本） </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar50 ll"></span>
+      <span class="rating_nums">9.4</span>
+      <span>(81评价)</span>
+      <span class="subject-cast">[法] 安东尼·德·圣-埃克苏佩里 / 梅思繁 / 中央广播电视大学出版社.国开童媒 / 2015</span>
+  </div>
+
+      </div>
+        <p>由法国知名出版机构伽利玛少儿出版社和法国3D大电影《小王子》官方授权出版的珍藏版绘本。
+《小王子（纯美珍藏绘本）》是法国著名飞行员作家圣-埃克苏佩里的代表作，讲...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Flocation%2Fdrama%2F2265626%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=3069&amp;type=search&amp;pos=11" onclick="moreurl(this,{i:'11', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img3.douban.com/view/drama_subject_poster/small/public/d5294953a59aa6e.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[舞台剧]</span>&nbsp;
+          <a href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Flocation%2Fdrama%2F2265626%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=3069&amp;type=search&amp;pos=11" onclick="moreurl(this,{i:'11', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">9.0</span>
+      <span>(3524评价)</span>
+  </div>
+
+      </div>
+        <p>经典法国音乐剧，改编自著名童话故事《小王子》。此书被誉为仅次于圣经的书。《小王子》原作者是安托万·德·圣埃克苏佩里（1900-1944）是法国著名的小说与童话作家，但...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1986590%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=12" target="_blank" onclick="moreurl(this,{i:'12', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img3.douban.com/spic/s3344180.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1986590%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=12" target="_blank" onclick="moreurl(this,{i:'12', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">9.1</span>
+      <span>(10212评价)</span>
+      <span class="subject-cast">[法] 圣·埃克苏佩里 / [台] 姚文雀 / 新世界出版社 / 2007</span>
+  </div>
+
+      </div>
+        <p>《小王子》所讲述的是美丽的伤感故事，飞行员“我”因为飞机出了故障，被迫降落在远离人烟的撒哈拉沙漠上，这时一位迷人而神秘的小男孩出现了，执拗地请“我”给他画一...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1915170%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=13" target="_blank" onclick="moreurl(this,{i:'13', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img3.doubanio.com/spic/s2084819.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1915170%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=13" target="_blank" onclick="moreurl(this,{i:'13', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">9.2</span>
+      <span>(7183评价)</span>
+      <span class="subject-cast">[法] 圣·埃克苏佩里 / 洪友 / 群言出版社 / 2006</span>
+  </div>
+
+      </div>
+        <p>尽管《小王于》这本童话于1943年在美国首次出版，而法国人却只愿意记得它的法国出版日——1946年4月。2006年4月，法国人高调为它过了60岁大寿，他们用法语向全球宣布：...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1048610%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=14" target="_blank" onclick="moreurl(this,{i:'14', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img3.douban.com/spic/s1229683.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1048610%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=14" target="_blank" onclick="moreurl(this,{i:'14', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">8.9</span>
+      <span>(3733评价)</span>
+      <span class="subject-cast">[法] 圣埃克絮佩里 / 周克希 / 上海译文出版社 / 2001</span>
+  </div>
+
+      </div>
+        <p>小王子是一个超凡脱俗的仙童，他住在一颗只比他大一丁点儿的小行星上。陪伴他的是一朵他非常喜爱的小玫瑰花。但玫瑰花的虚荣心伤害了小王子对她的感情。小王子告别小行...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F2278402%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=15" target="_blank" onclick="moreurl(this,{i:'15', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img4.douban.com/spic/s4652416.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F2278402%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=15" target="_blank" onclick="moreurl(this,{i:'15', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar50 ll"></span>
+      <span class="rating_nums">9.3</span>
+      <span>(2958评价)</span>
+      <span class="subject-cast">[法] 安托万·德·圣艾克絮佩里 / 黄荭 / 作家出版社 / 2007</span>
+  </div>
+
+      </div>
+        <p>献给雷翁·维尔特请孩子们原谅我把这本书题献给了一个大人。我有一个很充分的理由：这个大人是我在世上最好的朋友。我还有另一个理由：这个大人他什么都能明白，甚至是...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1199026%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=16" target="_blank" onclick="moreurl(this,{i:'16', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img3.doubanio.com/spic/s2115939.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1199026%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=16" target="_blank" onclick="moreurl(this,{i:'16', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">8.9</span>
+      <span>(2115评价)</span>
+      <span class="subject-cast">[法] 安东尼·德·圣艾修伯里 / 艾柯 / 天津教育出版社 / 2005</span>
+  </div>
+
+      </div>
+        <p>小王子是一个忧郁的小人儿，他来自一个很小很小的星球，在那儿什么都好小好小。小王子很容易忧伤，他小小的生命柔情善感……这样令人心疼的小王子，在撒哈拉沙漠中与作...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1933695%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=17" target="_blank" onclick="moreurl(this,{i:'17', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img4.douban.com/spic/s4166057.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1933695%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=17" target="_blank" onclick="moreurl(this,{i:'17', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">8.9</span>
+      <span>(1657评价)</span>
+      <span class="subject-cast">[法国] 安托万·德·圣埃克苏佩里 / 周国强 / 长江文艺出版社 湖北人民出版社 / 2011</span>
+  </div>
+
+      </div>
+        <p>《世界文学名著典藏:小王子(全译本)》所讲述的是美丽的伤感故事，飞行员“我”因为飞机出了故障，被迫降落在远离人烟的撒哈拉沙漠上，这时一位迷人而神秘的小男孩出现了...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1490045%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=18" target="_blank" onclick="moreurl(this,{i:'18', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img4.douban.com/spic/s1697387.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1490045%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=18" target="_blank" onclick="moreurl(this,{i:'18', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar45 ll"></span>
+      <span class="rating_nums">9.1</span>
+      <span>(1261评价)</span>
+      <span class="subject-cast">圣艾修伯里 / 艾柯 / 云南美术出版社 / 2006</span>
+  </div>
+
+      </div>
+        <p>一部全球销量仅次于《圣经》、全球发行的语言超过100种、保守发行量超过5亿本的经典童话故事！《小王子》的魅力已经令好几代人倾倒，它已不再是一部简单的意义上的童话...</p>
+    </div>
+  </div>
+
+              
+  
+  <div class="result">
+    <div class="pic">
+      <a class="nbg" href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1099975%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=19" target="_blank" onclick="moreurl(this,{i:'19', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子" ><img src="http://img4.douban.com/spic/s24549127.jpg"></a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3>
+          <span>[书籍]</span>&nbsp;<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1099975%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=1001&amp;type=search&amp;pos=19" target="_blank" onclick="moreurl(this,{i:'19', query:'%D0%A1%CD%F5%D7%D3'})" >小王子 </a>
+        </h3>
+        
+  <div class="rating-info">
+      <span class="allstar50 ll"></span>
+      <span class="rating_nums">9.3</span>
+      <span>(1280评价)</span>
+      <span class="subject-cast">[法] 圣埃克絮佩里 / 周克希 / 上海译文出版社 / 2002</span>
+  </div>
+
+      </div>
+        <p>小王子是一个超凡脱俗的仙童，他住在一颗只比他大一丁点儿的小行星上。陪伴他的是一朵他非常喜爱的小玫瑰花。但玫瑰花的虚荣心伤害了小王子对她的感情。小王子告别小行...</p>
+    </div>
+  </div>
+
+            <div class="result-list-ft">
+              <a href="#more" class="j a_search_more" data-q="С����" data-start="20" data-subtype="item">显示更多</a>
+            </div>
+        </div>
+
+        
+    <h2>
+        相关豆瓣用户:
+            
+    </h2>
+
+        
+  <div class="result-list">
+      
+
+  <div class="result">
+    <div class="pic">
+      <a class="nbg user-pic" href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fpeople%2F1248771%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=&amp;type=search&amp;pos=0" onclick="moreurl(this,{user_pos:'0', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子">
+        <img src="http://img3.douban.com/icon/u1248771-31.jpg" alt="小王子">
+      </a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3><a href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fpeople%2F1248771%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=&amp;type=search&amp;pos=0" onclick="moreurl(this,{user_pos:'0', query:'%D0%A1%CD%F5%D7%D3'})" >小王子</a></h3>
+        <div class="info">
+          
+          1154人关注/北京
+        </div>
+      </div>
+        <p>the MUsic
+and 
+the MaChiNes~</p>
+    </div>
+  </div>
+
+      
+
+  <div class="result">
+    <div class="pic">
+      <a class="nbg user-pic" href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fpeople%2F26867195%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=&amp;type=search&amp;pos=1" onclick="moreurl(this,{user_pos:'1', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子">
+        <img src="http://img3.douban.com/icon/u26867195-34.jpg" alt="小王子">
+      </a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3><a href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fpeople%2F26867195%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=&amp;type=search&amp;pos=1" onclick="moreurl(this,{user_pos:'1', query:'%D0%A1%CD%F5%D7%D3'})" >小王子</a></h3>
+        <div class="info">
+          
+          266人关注/广东深圳
+        </div>
+      </div>
+        <p>我倆各自一端
+
+
+望著大河彎彎
+
+
+終於敢放膽
+
+
+嬉皮笑臉面對
+
+
+人生的難
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  相信生活并热爱着这个不太美好的世界</p>
+    </div>
+  </div>
+
+      
+
+  <div class="result">
+    <div class="pic">
+      <a class="nbg user-pic" href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fpeople%2Fgowell%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=&amp;type=search&amp;pos=2" onclick="moreurl(this,{user_pos:'2', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子">
+        <img src="http://img3.douban.com/icon/u3280118-25.jpg" alt="小王子">
+      </a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3><a href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fpeople%2Fgowell%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=&amp;type=search&amp;pos=2" onclick="moreurl(this,{user_pos:'2', query:'%D0%A1%CD%F5%D7%D3'})" >小王子</a></h3>
+        <div class="info">
+          
+          262人关注/江苏南京
+        </div>
+      </div>
+        <p>blog地址：blog.sina.com.cn/u/1605217980
+我有很多个梦想
+每个梦想都有你
+新浪微博：http://t.sina.com.cn/gowellxu</p>
+    </div>
+  </div>
+
+      
+
+  <div class="result">
+    <div class="pic">
+      <a class="nbg user-pic" href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fpeople%2F78644409%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=&amp;type=search&amp;pos=3" onclick="moreurl(this,{user_pos:'3', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子">
+        <img src="http://img3.douban.com/icon/u78644409-4.jpg" alt="小王子">
+      </a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3><a href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fpeople%2F78644409%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=&amp;type=search&amp;pos=3" onclick="moreurl(this,{user_pos:'3', query:'%D0%A1%CD%F5%D7%D3'})" >小王子</a></h3>
+        <div class="info">
+          
+          123人关注/辽宁大连
+        </div>
+      </div>
+        <p>两个年轻人和一只流浪猫，撑起了一个温馨的小店......名不见经传的我们，在这个城市的角落，搭起了属于自己的一小片天......
+艳阳化雪送伤逝，雨燕徊翔挽春归。
+在这个...</p>
+    </div>
+  </div>
+
+      
+
+  <div class="result">
+    <div class="pic">
+      <a class="nbg user-pic" href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fpeople%2F57020840%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=&amp;type=search&amp;pos=4" onclick="moreurl(this,{user_pos:'4', query:'%D0%A1%CD%F5%D7%D3'})" title="小王子">
+        <img src="http://img3.douban.com/icon/u57020840-1.jpg" alt="小王子">
+      </a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h3><a href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fpeople%2F57020840%2F&amp;query=%D0%A1%CD%F5%D7%D3&amp;cat_id=&amp;type=search&amp;pos=4" onclick="moreurl(this,{user_pos:'4', query:'%D0%A1%CD%F5%D7%D3'})" >小王子</a></h3>
+        <div class="info">
+          
+          118人关注/香港
+        </div>
+      </div>
+        <p>我希望在豆瓣中，認識對紫微斗數有興趣的朋友。</p>
+    </div>
+  </div>
+
+      <div class="result-list-ft">
+          <a href="#more" class="j a_search_more" data-q="С����" data-start="5" data-subtype="user">显示更多</a>
+      </div>
+  </div>
+
+
+
+  </div>
+
+  
+  <div class="back-to-top">
+    <a href="#">&#8593;回顶部</a>
+  </div>
+  <script>
+    Do(function() {
+      $("html").delegate(".a_search_more","click",function(c){c.preventDefault();var b=$(this);if(b.hasClass("processing")){return}var a=b.data();b.attr("title",b.text()).text("加载中...");b.addClass("processing");$.get("/j/search",a,function(d){if(d.r){b.text("加载失败...");return}b.removeClass("processing");b.text(b.attr("title"));b.data("start",parseInt(b.data("start"),10)+d.limit);$(d.items.join("")).insertBefore(b.parent());if(!d.more){b.hide()}})});
+      (function(){var h=$(window);var k=$(document);var l;var a=$(".back-to-top");var b=$("#content").find(".article");var g;var i=$("#content").find(".search-result");var d=$.browser.msie&&$.browser.version==="6.0";var f=function(n){if(!f.cache){f.cache=[]}if(f.cache[n]){return}var m=new Date;(new Image()).src="/stat.html?source=group&action=back_top&iden="+n+"&month="+(m.getMonth()+1)+"&day="+m.getDate()+"&timestamp="+(+new Date);f.cache[n]=1};var e=function(){return i.offset().top+i.outerHeight()};var c=function(m){if(m+g>=e()){a.css({position:"absolute",bottom:"",top:e()-a.outerHeight()})}else{if(!d){a.css({position:"fixed",top:"",bottom:0})}}a.show().find("a").stop().animate({top:0})};var j=function(){a.hide().find("a").css("top",40)};h.resize(function(){g=h.height();a.css("left",b.offset().left+b.width()+80);l=k.height()/g>3?Math.max(2*g,$(".side").height()):0});h.trigger("resize");h.scroll((function(){var m;return function(){if(m){clearTimeout(m)}setTimeout(function(){if(l===0){return}var n=k.scrollTop();if(n>l){c(n)}else{j()}},100)}})());a.find("a").click(function(m){m.preventDefault();k.scrollTop(0)});if(d){h.scroll(function(){if(k.scrollTop()+g>=e()){return}a.css("top",k.scrollTop()+g-a.height())})}})();
+    });
+  </script>
+
+        </div>
+        <div class="aside">
+                
+  
+  <!-- douban ad begin -->
+  <div id="dale_subject_search_top_right"></div>
+  <!-- douban ad end -->
+
+
+  
+
+
+
+  <div class="search_report">
+    <a target="_blank" href="http://www.douban.com/misc/search_report?cat=&amp;q=%D0%A1%CD%F5%D7%D3">&gt; 对结果不满意？让我们知道</a>
+  </div>
+
+        </div>
+        <div class="extra">
+            
+        </div>
+    </div>
+</div>
+
+        
+<div id="footer">
+    
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2015 douban.com, all rights reserved
+</span>
+
+<a href="http://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="http://www.douban.com/about">关于豆瓣</a>
+    · <a href="http://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="http://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="http://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="http://help.douban.com/?app=main" target="_blank">帮助中心</a>
+    · <a href="http://developers.douban.com/" target="_blank">开发者</a>
+    · <a href="http://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="http://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+
+</div>
+
+    </div>
+    <script type="text/javascript" src="http://img3.douban.com/misc/mixed_static/73912b760768cf0b.js"></script>
+    
+  <!-- douban ad begin -->
+  
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'fumKAWiwxKU',
+            criteria = '8:С����|3:/search?source=suggest&amp;q=С����',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_subject_search_top_right', 'dale_search_promo'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'http://img3.douban.com/f/shire/0a3e8bdd48446950d821b65613a24e86be2b067a/js/ad.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+  <!-- douban ad end -->
+
+    
+    
+
+
+
+
+
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript';
+    g.defer=true;
+    g.async=true;
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+})();
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7019765-1']);
+_gaq.push(['_setCampNameKey', 'dcn']);
+_gaq.push(['_setCampSourceKey', 'dcs']);
+_gaq.push(['_setCampMediumKey', 'dcm']);
+_gaq.push(['_setCampTermKey', 'dct']);
+_gaq.push(['_setCampContentKey', 'dcc']);
+_gaq.push(['_addOrganic', 'baidu', 'word']);
+_gaq.push(['_addOrganic', 'soso', 'w']);
+_gaq.push(['_addOrganic', '3721', 'name']);
+_gaq.push(['_addOrganic', 'youdao', 'q']);
+_gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+_gaq.push(['_addOrganic', 'vnet', 'kw']);
+_gaq.push(['_addOrganic', 'sogou', 'query']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣']);
+_gaq.push(['_addIgnoredOrganic', 'douban']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣网']);
+_gaq.push(['_addIgnoredOrganic', 'www.douban.com']);
+_gaq.push(['_setDomainName', '.douban.com']);
+
+
+    _gaq.push(['_setCustomVar', 1, 'responsive_view_mode', 'desktop', 3]);
+
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+
+window._ga_init = function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+};
+if (window.addEventListener) {
+    window.addEventListener('load', _ga_init, false);
+} else {
+    window.attachEvent('onload', _ga_init);
+}
+</script>
+
+
+
+
+
+    <!-- dis14-->
+
+  <script>_SPLITTEST=''</script>
+
+<script>var _check_hijack = function () {
+    var _sig = "fumKAWiw", _login = false, bid = get_cookie('bid');
+    if (location.protocol != "file:" && (
+            typeof(bid) != "string" && _login ||
+            typeof(bid) == "string" && bid.substring(0,8) != _sig)) {
+        location.href += (/\?/.test(location.href)?"&":"?") + (
+                "_r=" + Math.random().toString(16).substring(2));
+    }};
+if (typeof(Do) != 'undefined') Do(_check_hijack);
+else if (typeof(get_cookie) != 'undefined') _check_hijack();
+</script></body>
+
+</html>
+

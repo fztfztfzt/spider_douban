@@ -1,6 +1,8 @@
 # -*- encoding:utf-8 -*- 
 import urllib2,urllib,os,re
 import cookielib
+from collections import OrderedDict
+import Color
 class douban:
     def __init__(self):
         cj = cookielib.CookieJar()
@@ -46,6 +48,35 @@ class douban:
         else :
             f2.write(self.ans)
 
+    def search(self):
+        query = raw_input("请输入查询内容：".decode('utf-8').encode('gbk'))
+        url = "http://www.douban.com/search?source=suggest&q="+query
+        ans = urllib2.urlopen(url)
+        result = ans.read()
+        f = open('search.html','wb')
+        f.write(result)
+     
+        match = re.findall(r'<span>\[(.*?)\]</span>.*? >(.*?)</a>.*?<span class="rating_nums">(.*?)</span>.*?<span>(.*?)</span>.*?<span class="subject-cast">(.*?)</span>.*?<p>(.*?)</p>',result,re.S)
+        print len(match)
+        for submatch in match:
+            content = OrderedDict()
+            content[u"类别"]=submatch[0].decode('utf-8')
+            content[u"名称"]=submatch[1].decode('utf-8')
+            content[u"评分"]=submatch[2].decode('utf-8')
+            content[u"评价人数"]=submatch[3].decode('utf-8')
+            content[u"说明"]=submatch[4].decode('utf-8')
+            content[u"简介"]=submatch[5].decode('utf-8')
+            for i in content:
+                Color.setTextColor(Color.FOREGROUND_PINK)
+                print i,
+                Color.setTextColor(Color.FOREGROUND_BLUE)
+                print content[i].encode('GB18030')
+                Color.resetColor()
+            print ''
+
 if __name__ == "__main__":
     dou = douban()
-    dou.connect()
+    #dou.connect()
+    dou.search()
+   
+
